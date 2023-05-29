@@ -36,10 +36,10 @@ for (let i = 0; i < data.country.length; i++) {
      
       document.querySelector("#countryInfo").innerHTML= countryName 
 
-      flagImg.src = document.getElementById("imageElement").src;
-  src="https://flagsapi.com/AD/flat/64.png;"
-      flagImg.src = flagUrl;
-      flagImg.alt = `${countryCode} Flag`;
+
+      document.getElementById("imageElement").src= (`https://flagsapi.com/${country}/flat/64.png`)
+     
+     
 
       console.log(data);
     })
